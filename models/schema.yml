@@ -1,0 +1,10 @@
+sources:
+  - name: DEMO
+    database: DEMO_DB
+    schema: STAGING
+    tables:
+      - name: stg__customer  # enabled
+      - name: stg__orders # not enabled
+      - name: stg__lineitem
+      - name: stg__nation
+      - name: stg__region
