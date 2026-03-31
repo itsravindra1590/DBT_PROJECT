@@ -2,6 +2,7 @@ WITH ORDERS
 AS
 (
     SELECT
+        *
     FROM {{ source('DEMO', 'stg__orders') }}
 )
 SELECT 

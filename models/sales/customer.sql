@@ -2,6 +2,7 @@ with CUSTOMER
 AS
 (
     SELECT 
+        *
     FROM {{ source('DEMO', 'stg__customer') }}
 )
 SELECT 
