@@ -1,0 +1,13 @@
+WITH NATION 
+AS
+(
+    SELECT 
+        *
+    FROM {{ source('DEMO', 'stg__nation') }}
+)
+SELECT 
+    N_NATIONKEY AS NATION_KEY,
+	N_NAME AS NAME,
+	N_REGIONKEY AS REGION_KEY,
+	N_COMMENT AS COMMENT
+FROM NATION
